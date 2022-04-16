@@ -76,7 +76,7 @@ export const sortCityAscRequest = () => async (dispatch) => {
   dispatch(addCityLoading());
   axios
     .get(
-      "https://react-eval-backend.herokuapp.com/cities?_sort=population&_order=desc"
+      "https://react-eval-backend.herokuapp.com/cities?_sort=population&_order=asc"
     )
     .then(({ data }) => {
       if (!data.length) {
@@ -94,7 +94,7 @@ export const sortCityDescRequest = () => async (dispatch) => {
   dispatch(addCityLoading());
   axios
     .get(
-      "https://react-eval-backend.herokuapp.com/cities?_sort=population&_order=asc"
+      "https://react-eval-backend.herokuapp.com/cities?_sort=population&_order=desc"
     )
     .then(({ data }) => {
       if (!data.length) {

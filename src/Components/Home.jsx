@@ -7,8 +7,8 @@ import Button from '@mui/material/Button';
 
 export const Home = () => {
   const dispatch = useDispatch();
-  const {cities} = useSelector((store) => store.city);
-  const {countries} = useSelector((store) => store.country);
+  const { cities } = useSelector((store) => store.city);
+  const { countries } = useSelector((store) => store.country);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Home = () => {
     dispatch(getCountryRequest());
   }
 
-  if(!cities.length){
+  if (!cities.length || !countries.length) {
     return <div>Loading</div>
   }
 
@@ -32,13 +32,13 @@ export const Home = () => {
     }}>Add Country</Button><Button variant="contained" onClick={() => {
       navigate("/add-city");
     }}>Add City</Button><br /><br />
-    Filter by country:  
+    Filter by country:
     {countries.map((e, id) => {
       return <Button variant="contained" onClick={() => {
         dispatch(filterDataRequest(e.country))
       }} key={id} value={e.country}>{e.country}</Button>
-    })}<br/><br />
-    Sort By Poplation:
+    })}<br /><br />
+    Sort By Population:
     <Button variant="contained" onClick={() => {
       dispatch(sortCityAscRequest());
     }}>Asc</Button>
@@ -46,7 +46,7 @@ export const Home = () => {
       dispatch(sortCityDescRequest());
     }}>Desc</Button>
     <br /><br />
-    <table style={{margin: "auto"}}>
+    <table style={{ margin: "auto" }}>
       <thead>
         <tr>
           <th>id</th>
@@ -71,9 +71,9 @@ export const Home = () => {
               navigate("/update-city");
             }}>Edit</Button></td>
             <td><Button variant="outlined" onClick={() => {
-            dispatch(deleteCityRequest(e.id));
-            handleData();
-          }}>Delete</Button></td>
+              dispatch(deleteCityRequest(e.id));
+              handleData();
+            }}>Delete</Button></td>
           </tr>
         })}
       </tbody>
