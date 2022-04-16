@@ -1,0 +1,132 @@
+{
+  "countries": [
+    {
+      "country": "India",
+      "id": 1
+    },
+    {
+      "country": "China",
+      "id": 2
+    },
+    {
+      "country": "Taiwan",
+      "id": 3
+    },
+    {
+      "country": "India",
+      "id": 4
+    },
+    {
+      "country": "China",
+      "id": 5
+    },
+    {
+      "country": "Singapore",
+      "id": 6
+    }
+  ],
+  "cities": [
+    {
+      "city": "Mumbai",
+      "population": "300000",
+      "country": "India",
+      "id": 1
+    },
+    {
+      "city": "Delhi",
+      "population": "50000000",
+      "country": "India",
+      "id": 2
+    },
+    {
+      "city": "Mumbai",
+      "population": "300000",
+      "country": "India",
+      "id": 3
+    },
+    {
+      "city": "Shanghai",
+      "population": "300000",
+      "country": "China",
+      "id": 4
+    },
+    {
+      "city": "Shanghai",
+      "population": "300000",
+      "country": "China",
+      "id": 5
+    },
+    {
+      "city": "Shanghai",
+      "population": "300000",
+      "country": "China",
+      "id": 6
+    },
+    {
+      "city": "Chennai",
+      "population": "20000",
+      "country": "India",
+      "id": 7
+    },
+    {
+      "city": "Chennai",
+      "population": "20000",
+      "country": "India",
+      "id": 8
+    },
+    {
+      "city": "Chennai",
+      "population": "20000",
+      "country": "India",
+      "id": 9
+    },
+    {
+      "city": "Taipei",
+      "population": "10000000",
+      "country": "Taiwan",
+      "id": 10
+    },
+    {
+      "city": "Taipei",
+      "population": "10000000",
+      "country": "Taiwan",
+      "id": 11
+    },
+    {
+      "city": "Bangalore",
+      "population": "12345000",
+      "country": "India",
+      "id": 12
+    },
+    {
+      "city": "Chennai",
+      "population": "1205555",
+      "country": "India",
+      "id": 13
+    },
+    {
+      "city": "Nagpur",
+      "population": "15000000",
+      "country": "India",
+      "id": 14
+    },
+    {
+      "city": "Shanghai",
+      "population": "1234566",
+      "country": "China",
+      "id": 15
+    },
+    {
+      "city": "Mumbai",
+      "population": "123456852",
+      "country": "India",
+      "id": 16
+    },
+    {
+      "city": "Mumbai",
+      "population": "4123669996",
+      "country": "India",
+      "id": 17
+    }
+  ]
+}
